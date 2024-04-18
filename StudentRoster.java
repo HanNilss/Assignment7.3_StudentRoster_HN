@@ -75,10 +75,8 @@ public class StudentRoster {
 		
 		for (int i = 0;i<NR_STUDENTS;i++) {
 			if (sAr[i].status == true) {
-				 n++;
-				}
-			if (sAr[i].status == true) {
-			 r += sAr[i].toString();
+				n++;
+				r += sAr[i].toString();
 			}
 		}
 
