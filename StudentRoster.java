@@ -40,7 +40,16 @@ public class StudentRoster {
 		sAr[i].setName(f,l); 
 		
 		System.out.println("Enter grade point average: ");
-		gpa = scnr.nextDouble();
+		
+		try {
+			gpa = scnr.nextDouble();
+			sAr[i].setGpa(gpa);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			System.out.println("Not a number. Please enter a number for grade point average: ");
+			gpa = scnr.nextDouble();
+		}
 		sAr[i].setGpa(gpa);
 		
 		System.out.println("Enter current address: ");
